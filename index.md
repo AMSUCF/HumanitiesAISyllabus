@@ -1,48 +1,43 @@
-# ENG 6806
-
-**Humanities in the Age of AI**
-
 ![Humanities in the Age of AI - DALL-E and Adobe Firefly](title.png)
 
--   **Instructor:** Anastasia Salter
+-   **Course Number:** ENG 6806
 -   **Email:** anastasia at ucf
 -   **Office Hours:** TCH 236, 10:30 AM to noon
 -   **Course Meeting:** Asynchronous Online
 
 ## Contents
 
-- [ENG 6806](#eng-6806)
-  - [Contents](#contents)
-  - [Course Description](#course-description)
-  - [Course Objectives](#course-objectives)
-  - [Materials and Texts](#materials-and-texts)
-  - [Evaluation and Grading](#evaluation-and-grading)
-  - [Asynchronous Online Course Structure](#asynchronous-online-course-structure)
-  - [Weekly Schedule](#weekly-schedule)
-    - [Week One: Textual - Histories (Monday, August 19)](#week-one-textual---histories-monday-august-19)
-    - [Week Two: Textual - Generation (Monday, August 26)](#week-two-textual---generation-monday-august-26)
-    - [Week Three: Textual - Sources (Monday, September 2](#week-three-textual---sources-monday-september-2)
-    - [Week Four: Textual - Combinatory (Monday, September 9)](#week-four-textual---combinatory-monday-september-9)
-    - [Week Five: Visual - Aesthetics (Monday, September 16)](#week-five-visual---aesthetics-monday-september-16)
-    - [Week Six: Visual - Art and Creativity (Monday, September 23)](#week-six-visual---art-and-creativity-monday-september-23)
-    - [Week Seven: Visual - Photography and Realism (Monday, September 30)](#week-seven-visual---photography-and-realism-monday-september-30)
-    - [Week Eight: Visual - Perceptions (Monday, October 7)](#week-eight-visual---perceptions-monday-october-7)
-    - [Week Nine: Procedural - Code and Rules (Monday, October 14)](#week-nine-procedural---code-and-rules-monday-october-14)
-    - [Week Ten: Procedural - Digital Humanities (Monday, October 21)](#week-ten-procedural---digital-humanities-monday-october-21)
-    - [Week Eleven: Procedural - Art and Play (Monday, October 28)](#week-eleven-procedural---art-and-play-monday-october-28)
-    - [Week Twelve: Procedural - Hypertext (Monday, November 4)](#week-twelve-procedural---hypertext-monday-november-4)
-    - [Week Thirteen: Textual-Visual-Procedural (Monday, November 11)](#week-thirteen-textual-visual-procedural-monday-november-11)
-    - [Week Fourteen: Applications: Art (Monday, November 18)](#week-fourteen-applications-art-monday-november-18)
-    - [Week Fifteen: Applications: Humanities (Monday, November 25)](#week-fifteen-applications-humanities-monday-november-25)
-    - [Final Reflection (Due December 7)](#final-reflection-due-december-7)
-  - [General Policies](#general-policies)
-    - [Academic Integrity](#academic-integrity)
-    - [Responses to Academic Dishonesty, Plagiarism, or Cheating](#responses-to-academic-dishonesty-plagiarism-or-cheating)
-    - [Course Accessibility Statement](#course-accessibility-statement)
-    - [Campus Safety Statement](#campus-safety-statement)
-    - [Deployed Active Duty Military Students](#deployed-active-duty-military-students)
-    - [Authorized Events and Religious Observances](#authorized-events-and-religious-observances)
-    - [Title IX Policy](#title-ix-policy)
+- [Contents](#contents)
+- [Course Description](#course-description)
+- [Course Objectives](#course-objectives)
+- [Materials and Texts](#materials-and-texts)
+- [Evaluation and Grading](#evaluation-and-grading)
+- [Asynchronous Online Course Structure](#asynchronous-online-course-structure)
+- [Weekly Schedule](#weekly-schedule)
+  - [Week One: Textual - Histories (Monday, August 19)](#week-one-textual---histories-monday-august-19)
+  - [Week Two: Textual - Generation (Monday, August 26)](#week-two-textual---generation-monday-august-26)
+  - [Week Three: Textual - Sources (Monday, September 2](#week-three-textual---sources-monday-september-2)
+  - [Week Four: Textual - Combinatory (Monday, September 9)](#week-four-textual---combinatory-monday-september-9)
+  - [Week Five: Visual - Aesthetics (Monday, September 16)](#week-five-visual---aesthetics-monday-september-16)
+  - [Week Six: Visual - Art and Creativity (Monday, September 23)](#week-six-visual---art-and-creativity-monday-september-23)
+  - [Week Seven: Visual - Photography and Realism (Monday, September 30)](#week-seven-visual---photography-and-realism-monday-september-30)
+  - [Week Eight: Visual - Perceptions (Monday, October 7)](#week-eight-visual---perceptions-monday-october-7)
+  - [Week Nine: Procedural - Code and Rules (Monday, October 14)](#week-nine-procedural---code-and-rules-monday-october-14)
+  - [Week Ten: Procedural - Digital Humanities (Monday, October 21)](#week-ten-procedural---digital-humanities-monday-october-21)
+  - [Week Eleven: Procedural - Art and Play (Monday, October 28)](#week-eleven-procedural---art-and-play-monday-october-28)
+  - [Week Twelve: Procedural - Hypertext (Monday, November 4)](#week-twelve-procedural---hypertext-monday-november-4)
+  - [Week Thirteen: Textual-Visual-Procedural (Monday, November 11)](#week-thirteen-textual-visual-procedural-monday-november-11)
+  - [Week Fourteen: Applications: Art (Monday, November 18)](#week-fourteen-applications-art-monday-november-18)
+  - [Week Fifteen: Applications: Humanities (Monday, November 25)](#week-fifteen-applications-humanities-monday-november-25)
+  - [Final Reflection (Due December 7)](#final-reflection-due-december-7)
+- [General Policies](#general-policies)
+  - [Academic Integrity](#academic-integrity)
+  - [Responses to Academic Dishonesty, Plagiarism, or Cheating](#responses-to-academic-dishonesty-plagiarism-or-cheating)
+  - [Course Accessibility Statement](#course-accessibility-statement)
+  - [Campus Safety Statement](#campus-safety-statement)
+  - [Deployed Active Duty Military Students](#deployed-active-duty-military-students)
+  - [Authorized Events and Religious Observances](#authorized-events-and-religious-observances)
+  - [Title IX Policy](#title-ix-policy)
 
 ## Course Description
 
