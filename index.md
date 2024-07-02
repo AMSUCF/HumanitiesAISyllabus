@@ -1,5 +1,6 @@
-# ENG 6806: Humanities in the Age of AI
+# ENG 6806
 
+-   **Humanities in the Age of AI**
 -   **Instructor:** Anastasia Salter
 -   **Email:** anastasia at ucf
 -   **Office Hours:** TCH 236, 10:30 AM to noon
@@ -7,7 +8,7 @@
 
 ## Contents
 
-- [ENG 6806: Humanities in the Age of AI](#eng-6806-humanities-in-the-age-of-ai)
+- [ENG 6806](#eng-6806)
   - [Contents](#contents)
   - [Course Description](#course-description)
   - [Course Objectives](#course-objectives)
@@ -297,7 +298,7 @@ Tutorial: Multimodal Development
 
 ### Week Fourteen: Applications: Art (Monday, November 18)
 
-Tutorial: Visual Studio Code
+Tutorial: Debugging
 
 -   *Code to Joy* - Defining Functions
 -   *Algorithms of Oppression* - Future of Knowledge in Public
