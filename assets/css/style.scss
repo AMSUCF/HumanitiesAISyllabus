@@ -4,19 +4,18 @@
 @import "{{ site.theme }}";
 
 // Custom styles for Cyberpunk-inspired Slate theme
-
 // Color Variables
-$body-bg: #0d0d0d;
-$text-color: #0ff;
-$link-color: #ff00ff;
-$link-hover-color: #00ffff;
-$header-bg: #1a1a1a;
-$header-text-color: #0ff;
-$border-color: #333;
+$body-bg: #ffffff; // White background for readability
+$text-color: #000000; // Black text for readability
+$link-color: #0000ff; // Dark blue for links
+$link-hover-color: #ff00ff; // Magenta for link hover
+$header-bg: #0d0d0d; // Dark background for header
+$header-text-color: rgb(162, 31, 223); // Neon cyan for header text
+$border-color: #333; // Dark border color
 
 // Font Variables
-$base-font-family: 'Orbitron', sans-serif;
-$header-font-family: 'VT323', monospace;
+$base-font-family: 'Arial', sans-serif; // Standard font for readability
+$header-font-family: 'Orbitron', sans-serif; // Fancy font for headings
 
 // Cyberpunk Fonts
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=VT323&display=swap');
@@ -73,8 +72,8 @@ footer {
 
 // Code blocks
 pre, code {
-  background-color: #0d0d0d;
-  color: #00ff00;
+  background-color: #f5f5f5;
+  color: #000000;
   border: 1px solid $border-color;
 }
 
@@ -95,5 +94,3 @@ table {
   background-color: $header-bg;
   color: $text-color;
 }
-
-// Add any additional custom styles below
