@@ -125,7 +125,7 @@ guide the week's making experiments. Relevant recent articles will be integrated
 |--------|-------------------------------------------------------------------------------------------------------------------------|-------------|
 | 5      | **Activity Verification** - Complete the brief survey posted on Webcourses as soon as possible to confirm your enrollment in the course. As this is required by the university, please attend to it as soon as possible at the start of classes. | Friday, August 26 |
 | 75     | **Generative Exercises** - Weekly discussions will consist of making, sharing, and reflecting on the process of exploring. We will work from tutorials and try a new form every week, with reflective questions connecting our process of making to the theoretical frameworks and provocations offered by our readings. | Weekly |
-| 20     | **Reflection** - During the final exam week, students will complete a reflective essay on their journey, with particular consideration to next steps and potential future applications of the making mechanisms introduced throughout the semester. This reflection should include AI-generated material alongside materials produced directly by the student. | Friday, December 9 |
+| 20     | **Reflection** - During the final exam week, students will complete a reflective essay on their journey, with particular consideration to next steps and potential future applications of the making mechanisms introduced throughout the semester. This reflection should include AI-generated material alongside materials produced directly by the student. | Tuesday, December 7th |
 
 
 Students can access their grades and feedback at any time using the
@@ -298,7 +298,7 @@ Tutorial: Iteration and Design
 ### Final Reflection (Due December 7)
 
 -   Submit & complete your Final Reflection, as
-    well as any approved late work, by the end of finals week!
+    well as any approved late work, by December 7th!
 -   **Extra Credit Making Exercise: New Tools for Generation**
 
 ## General Policies
