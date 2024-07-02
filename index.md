@@ -1,6 +1,7 @@
 # ENG 6806
 
--   **Humanities in the Age of AI**
+**Humanities in the Age of AI**
+
 -   **Instructor:** Anastasia Salter
 -   **Email:** anastasia at ucf
 -   **Office Hours:** TCH 236, 10:30 AM to noon
