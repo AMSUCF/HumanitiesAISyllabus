@@ -7,6 +7,8 @@ To start us off, I want you to have two experiences. First, with a historic chat
 
 ### Conversations, Two Ways
 
+![Eliza](eliza.png)
+
 For your first virtual therapist encounter, spend at least 15 minutes interacting with [<<E.L.I.Z.A. Talking>>](https://www.masswerk.at/eliza/). This is one of many iterations on Norbert Landsteiner's version of the original Weizenbaum ELIZA program from our readings: it features a text-to-speech library, which adds to the "chat" capacity of the session. Try talking to ELIZA about topics related to your thoughts after this first week's lecture and readings, and particularly consider asking questions related to the human and the machine (as shown in the screenshot here).
 
 For your second encounter, use any current generative AI chat interface. The most popular is the free version of [ChatGPT](https://chatgpt.com/), but you can also use UCF's CoPilot access instead (as noted above). If you are fairly familiar with both, consider trying another model such as [Google Gemini](https://gemini.google.com/app) or [Anthropic Claude](https://claude.ai/) For these models, start with a prompt to set the chat to respond similarly to Eliza. I recommend something along the lines of: "For this conversation, please reply as if you are a therapist trained in person-centered or Rogerian therapy, akin to the ELIZA bot." 
