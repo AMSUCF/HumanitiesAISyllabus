@@ -174,7 +174,8 @@ circumstances will require additional time!
 Tutorial: Interfaces
 
 -   *Bitstreams* - The Poetics of Macintosh; The Story of S; Coda
--   Emerson, Lori, 'Interfaced', in Matthew Rubery, and Leah Price (eds), Further Reading (2020; online edn, Oxford Academic, 5 Mar. 2020), https://doi.org/10.1093/oxfordhb/9780198809791.013.29.
+-   [Emerson, Lori, 'Interfaced', in Matthew Rubery, and Leah Price (eds), Further Reading (2020; online edn, Oxford Academic, 5 Mar. 2020).](https://loriemerson.net/2020/02/07/interfaced/)
+-   [Bogost, Ian. "AI Cheating Is Getting Worse." The Atlantic. August 19, 2024. ](https://www.theatlantic.com/technology/archive/2024/08/another-year-ai-college-cheating/679502/)
 -   **Generative Exercise Two: Interface Critique**
 
 ### Week Three: Textual - Sources (Monday, September 2
