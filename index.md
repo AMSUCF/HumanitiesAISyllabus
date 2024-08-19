@@ -162,7 +162,7 @@ circumstances will require additional time!
 
 ### Week One: Textual - Histories (Monday, August 19)
 
-Tutorial: Eliza and Bots
+[Tutorial: Eliza and Bots](weekone.md)
 
 -   *Bitsreams* - Introduction; Archives Without Dust
 -   Berry, D. M. (2023). The Limits of Computation: Joseph Weizenbaum and the ELIZA Chatbot. Weizenbaum Journal of the Digital Society, 3(3). [https://doi.org/10.34669/WI.WJDS/3.3.2](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106)
