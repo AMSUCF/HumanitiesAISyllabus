@@ -24,10 +24,11 @@ These are just a few small examples from broad histories of text
 generation that speak to how this can be both a creative and intentional
 practice.
 
+![Page from Policeman's Beard](Chamberlain.png)
 One example that frequently gets positioned as the first published
 "computer-authored" book is William Chamberlain\'s 1984 [*The
 Policeman\'s Beard is Half
-Constructed*](https://archive.org/details/policemansbeardi0000unse).
+Constructed*](https://archive.org/details/policemansbeardi0000unse). A page demonstrating the range of poetic output curated by Chamberlain is screenshotted above.
 It's not actually the first (that's a subject for much longer debate than we'll get into right now), but it was one of the first to get wide
 attention. That book is credited to a software program, Racter, but
 it\'s really an example of just how much human intervention, editing,
