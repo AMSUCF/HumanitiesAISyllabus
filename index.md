@@ -171,7 +171,7 @@ circumstances will require additional time!
 
 ### Week Two: Textual - Generation (Monday, August 26)
 
-Tutorial: Interfaces
+[Tutorial: Interfaces](weektwo.md)
 
 -   *Bitstreams* - The Poetics of Macintosh; The Story of S; Coda
 -   [Emerson, Lori, 'Interfaced', in Matthew Rubery, and Leah Price (eds), Further Reading (2020; online edn, Oxford Academic, 5 Mar. 2020).](https://loriemerson.net/2020/02/07/interfaced/)
