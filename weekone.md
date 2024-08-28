@@ -1,4 +1,3 @@
-
 ## Tutorial: Eliza and Bots
 
 As this is the first week of class, the goal is to get everyone comfortable with working with the simplest and currently most common interface for generative AI: text prompts, or "chat." ChatGPT has popularized this format and brought it to a wide audience, but bots are a much older concept. You might have encountered them on help websites where they're often a source of frustration in tech support systems and customer service. Those are more obvious bots with the goal of being particularly conversational, whereas ChatGPT and similar interfaces are really just providing you with a context for entering text prompts. Conversational input is actually often not as productive as something more optimized, which we will be talking about as we move forward.

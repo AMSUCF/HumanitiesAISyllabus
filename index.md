@@ -14,7 +14,7 @@
 - [Weekly Schedule](#weekly-schedule)
   - [Week One: Textual - Histories (Monday, August 19)](#week-one-textual---histories-monday-august-19)
   - [Week Two: Textual - Generation (Monday, August 26)](#week-two-textual---generation-monday-august-26)
-  - [Week Three: Textual - Sources (Monday, September 2](#week-three-textual---sources-monday-september-2)
+  - [Week Three: Textual - Sources (Monday, September 2)](#week-three-textual---sources-monday-september-2)
   - [Week Four: Textual - Combinatory (Monday, September 9)](#week-four-textual---combinatory-monday-september-9)
   - [Week Five: Visual - Aesthetics (Monday, September 16)](#week-five-visual---aesthetics-monday-september-16)
   - [Week Six: Visual - Art and Creativity (Monday, September 23)](#week-six-visual---art-and-creativity-monday-september-23)
@@ -178,12 +178,14 @@ circumstances will require additional time!
 -   [Bogost, Ian. "AI Cheating Is Getting Worse." The Atlantic. August 19, 2024. ](https://www.theatlantic.com/technology/archive/2024/08/another-year-ai-college-cheating/679502/)
 -   **Generative Exercise Two: Interface Critique**
 
-### Week Three: Textual - Sources (Monday, September 2
+### Week Three: Textual - Sources (Monday, September 2)
 
-Tutorial: Reading Across Texts 
+[Tutorial: Reading Across Texts](weekthree.md) 
 
 -   *Artificial Intelligence* - Part I: Background
 -   Underwood, Ted. "A Genealogy of Distant Reading." *DHQ: Digital Humanities Quarterly* 11.2 (2017). [http://digitalhumanities.org:8081/dhq/vol/11/2/000317/000317.html](http://digitalhumanities.org:8081/dhq/vol/11/2/000317/000317.html).
+-   [Kirschenbaum, Matthew. "Prepare for the Textpocalypse." The Atlantic. March 8, 2023.](https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/)
+-   [Bhatia, Aatish. "When A.I.'s Output Is a Threat to A.I. Itself." The New York Times. August 25, 2024.](https://www.nytimes.com/interactive/2024/08/26/upshot/ai-synthetic-data.html)
 -   **Generative Exercise Three: Textual Analysis**
 
 ### Week Four: Textual - Combinatory (Monday, September 9)
