@@ -190,10 +190,13 @@ circumstances will require additional time!
 
 ### Week Four: Textual - Combinatory (Monday, September 9)
 
-Tutorial: Combining Texts
+[Tutorial: Combining Texts](weekfour.md)
 
 -   *Artificial Intelligence* - Part II: Looking and Seeing
 -   Mackay, James and Polina Mackay. “Experiments in Generating Cut-up texts with Commercial AI”, Electronic Book Review, June 9, 2024, [https://doi.org/10.7273/gkrg-5d74](https://electronicbookreview.com/essay/experiments-in-generating-cut-up-texts-with-commercial-ai/).
+-   [Barber, Gregory. "Text-Savvy AI Is Here to Write Fiction." Wired Magazine. November 23, 2019.](https://www.wired.com/story/nanogenmo-ai-novels-gpt2/) 
+-   [Beckerman, Gal. "AI is Coming for Amateur Novelists. That's Fine." The Atlantic. September 4, 2024.](https://www.theatlantic.com/books/archive/2024/09/ai-is-coming-for-the-amateur-novelists-thats-fine/679696/)
+-   [Chiang, Ted. "Why A.I. Isn't Going to Make Art." The New Yorker. August 31, 2024.](https://www.newyorker.com/culture/the-weekend-essay/why-ai-isnt-going-to-make-art)
 -   **Generative Exercise Four: Cut-up Texts**
 
 ### Week Five: Visual - Aesthetics (Monday, September 16)
