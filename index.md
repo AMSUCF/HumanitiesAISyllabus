@@ -205,6 +205,8 @@ Tutorial: Mash-ups and Remixes
 
 -   *The Perception Machine* - Introduction; Does Photography Have a Future?
 -   *Artificial Intelligence* - Part III: Learning to Play
+-   [Feiger, Leah. "Could AI and Deepfakes Sway the US Election?" Wired Magazine. September 6, 2024.](https://www.wired.com/story/deepfake-porn-election/)
+-   [Bobrowsky, Meghan and Miles Kruppa. "Mickey Mouse Smoking: How AI Images Tools Are Generating New Content-Moderation Problems." The Wall Street Journal. September 2, 2024.](https://www.wsj.com/tech/ai/mickey-mouse-smoking-how-ai-image-tools-are-generating-new-content-moderation-problems-da90148e)
 -   **Generative Exercise Five: Playful Generation**
 
 ### Week Six: Visual - Art and Creativity (Monday, September 23)
