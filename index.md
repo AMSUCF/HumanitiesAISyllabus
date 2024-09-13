@@ -162,7 +162,7 @@ circumstances will require additional time!
 
 ### Week One: Textual - Histories (Monday, August 19)
 
-[Tutorial: Eliza and Bots](weekone.md)
+[**Tutorial: Eliza and Bots**](weekone.md)
 
 -   *Bitsreams* - Introduction; Archives Without Dust
 -   Berry, D. M. (2023). The Limits of Computation: Joseph Weizenbaum and the ELIZA Chatbot. Weizenbaum Journal of the Digital Society, 3(3). [https://doi.org/10.34669/WI.WJDS/3.3.2](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106)
@@ -171,7 +171,7 @@ circumstances will require additional time!
 
 ### Week Two: Textual - Generation (Monday, August 26)
 
-[Tutorial: Interfaces](weektwo.md)
+[**Tutorial: Interfaces**](weektwo.md)
 
 -   *Bitstreams* - The Poetics of Macintosh; The Story of S; Coda
 -   [Emerson, Lori, 'Interfaced', in Matthew Rubery, and Leah Price (eds), Further Reading (2020; online edn, Oxford Academic, 5 Mar. 2020).](https://loriemerson.net/2020/02/07/interfaced/)
@@ -180,7 +180,7 @@ circumstances will require additional time!
 
 ### Week Three: Textual - Sources (Monday, September 2)
 
-[Tutorial: Reading Across Texts](weekthree.md) 
+[**Tutorial: Reading Across Texts**](weekthree.md) 
 
 -   *Artificial Intelligence* - Part I: Background
 -   Underwood, Ted. "A Genealogy of Distant Reading." *DHQ: Digital Humanities Quarterly* 11.2 (2017). [http://digitalhumanities.org:8081/dhq/vol/11/2/000317/000317.html](http://digitalhumanities.org:8081/dhq/vol/11/2/000317/000317.html).
@@ -190,7 +190,7 @@ circumstances will require additional time!
 
 ### Week Four: Textual - Combinatory (Monday, September 9)
 
-[Tutorial: Combining Texts](weekfour.md)
+[**Tutorial: Combining Texts**](weekfour.md)
 
 -   *Artificial Intelligence* - Part II: Looking and Seeing
 -   Mackay, James and Polina Mackay. “Experiments in Generating Cut-up texts with Commercial AI”, Electronic Book Review, June 9, 2024, [https://doi.org/10.7273/gkrg-5d74](https://electronicbookreview.com/essay/experiments-in-generating-cut-up-texts-with-commercial-ai/).
@@ -201,7 +201,7 @@ circumstances will require additional time!
 
 ### Week Five: Visual - Aesthetics (Monday, September 16)
 
-Tutorial: Mash-ups and Remixes
+[**Tutorial: Mash-ups and Remixes**](weekfive.md)
 
 -   *The Perception Machine* - Introduction; Does Photography Have a Future?
 -   *Artificial Intelligence* - Part III: Learning to Play

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markov Chain Story Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        #story {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Markov Chain Story Generator</h1>
+    <p>Click the button below to generate a random story based on the combined centos text.</p>
+    <button onclick="generateStory()">Generate Story</button>
+
+    <div id="story"></div>
+
+    <script>
+        // Seed text from the combined centos story
+        const seedText = `Reflecting on my childhood, I realize that raising me on the unworry drug robbed me of any chance. Nathen appeared next, a thin young man with straight black hair...`;
+
+        // Function to build the Markov Chain model
+        function buildMarkovChain(text) {
+            const words = text.split(/\s+/);
+            const chain = {};
+
+            for (let i = 0; i < words.length - 1; i++) {
+                const word = words[i].toLowerCase();
+                const nextWord = words[i + 1].toLowerCase();
+
+                if (!chain[word]) {
+                    chain[word] = [];
+                }
+
+                chain[word].push(nextWord);
+            }
+
+            return chain;
+        }
+
+        // Function to generate a random story based on the Markov Chain
+        function generateStory() {
+            const markovChain = buildMarkovChain(seedText);
+            let currentWord = getRandomWord(Object.keys(markovChain));
+            let story = [capitalize(currentWord)];
+
+            // Generate 100 words in the story
+            for (let i = 0; i < 100; i++) {
+                const nextWords = markovChain[currentWord.toLowerCase()];
+                if (!nextWords || nextWords.length === 0) {
+                    break;  // End the story if no next words
+                }
+                currentWord = getRandomWord(nextWords);
+                story.push(currentWord);
+            }
+
+            // Display the story
+            document.getElementById('story').innerHTML = story.join(' ') + '.';
+        }
+
+        // Helper function to get a random word from an array
+        function getRandomWord(words) {
+            return words[Math.floor(Math.random() * words.length)];
+        }
+
+        // Helper function to capitalize the first word
+        function capitalize(word) {
+            return word.charAt(0).toUpperCase() + word.slice(1);
+        }
+    </script>
+
+</body>
+</html>

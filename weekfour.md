@@ -25,4 +25,7 @@ Once you have at least five cleaned files that you're happy with, start asking C
 Continue iterating through at least five different approaches until you have a single "story text" that you are happy with. Some things aren't going to work as well when run through the ChatGPT interface as they would if you exported the code yourself, but don't worry about that this week: if you run into an error involving external libraries, ask ChatGPT to try a simpler solution. 
 
 ![Sample Cento HTML](cento.png)
+
+You can also check out the [Markov inspired](markov.html) generator we made as a group during the live session.
+
 Once you have your story text, ask ChatGPT to convert it to an HTML format that's better for display. This doesn't need to be fancy, but think about how it might have meaning. For example, shown here is one iteration of my test, which is a Cento and includes lines from each story highlighted in different colors based on their original source text: I accomplished this by asking ChatGPT to add markers when building the Cento, then replace those markers with font colors after converting the file. Share the final HTML file as well as screenshots from your process back in this week's discussion.
