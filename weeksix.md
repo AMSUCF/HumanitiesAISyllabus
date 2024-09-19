@@ -14,7 +14,7 @@ Here's a few examples of questions to ask about single sets and images to prompt
 - **Generate similar images.** This is unlikely to get good results without a lot of specificity: focus on elements that the image to text translation has recognized, and provide specific prompts on what you want the generated images to follow. 
 - **Visualize the set.** Ask it to use the file names of the images, and put them into a meaningful relationship: you could ask for a visualization positioning them in relationship to one another based on key characteristics, as shown here with a simple set of media images pulled from the Internet Archive.
 
-![Visualization of media images by themes](vizualization.png)
+![Visualization of media images by themes](visualization.png)
 
 As you work, think about how this might change your approach to text to image prompting (like we did last week). Consider what other uses this might have for investigating material culture, and where the weaknesses are in the translations.
 
