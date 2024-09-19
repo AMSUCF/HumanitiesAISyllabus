@@ -211,10 +211,12 @@ circumstances will require additional time!
 
 ### Week Six: Visual - Art and Creativity (Monday, September 23)
 
-Tutorial: Archival Images
+[Tutorial: Data Visualization](weeksix.md)
 
 -   *The Perception Machine* - Screen Cuts; From Machine Vision to a Nontrivial Perception Machine
 -   *Artificial Intelligence* - Part IV: Artificial Intelligence Meets Natural Language
+-   [Jebb, Louis. "On process: Refik Anadol seeks to demystify AI art by showing how it is put together." The Art Newspaper. April 5, 2024](https://www.theartnewspaper.com/2024/04/05/on-process-refik-anadol-seeks-to-demystify-ai-art-by-showing-how-it-is-put-together)
+-   [Nyce, Caroline Mimbs. "Why Does AI Art Look Like That?" The Atlantic. August 16, 2024.](https://www.theatlantic.com/technology/archive/2024/08/why-does-all-ai-art-look-same/679488/)
 -   **Generative Exercise Six: Meaningful Images**
 
 ### Week Seven: Visual - Photography and Realism (Monday, September 30)
