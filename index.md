@@ -211,7 +211,7 @@ circumstances will require additional time!
 
 ### Week Six: Visual - Art and Creativity (Monday, September 23)
 
-[Tutorial: Archival Images](weeksix.md)
+[**Tutorial: Archival Images**](weeksix.md)
 
 -   *The Perception Machine* - After-Photography; Screen Cuts; From Machine Vision to a Nontrivial Perception Machine
 -   *Artificial Intelligence* - Part IV: Artificial Intelligence Meets Natural Language
@@ -225,6 +225,8 @@ Tutorial: Video
 
 -   *The Perception Machine* - AUTO-FOTO-KINO; Can You Photograph the Future?
 -   *Artificial Intelligence* - Part V: The Barrier of Meaning
+-   [Watercutter, Angela. "Lionsgate's New Deal is a Test of Hollywood's Relationship with AI." Wired. September 18, 2024.](https://www.wired.com/story/lionsgates-new-deal-is-a-test-of-hollywoods-relationship-with-ai/)
+-   [Thompson, Stuart. "California Passes Election 'Deepfake' Laws, Forcing Social Media Companies to Take Action." New York Times. September 17, 2024.](https://www.nytimes.com/2024/09/17/technology/california-deepfakes-law-social-media-newsom.html)
 -   **Generative Exercise Seven: Expansive Imaginaries**
 
 ### Week Eight: Visual - Perceptions (Monday, October 7)
@@ -241,6 +243,7 @@ Tutorial: Visual Studio Code
 
 -   *Code to Joy* - The What of Programming
 -   *Algorithms of Oppression* - The Power of Algorithms
+-   Evans, Julia. [*So you want to be a wizard.*](https://wizardzines.com/zines/wizard/) 
 -   **Generative Exercise Nine: Tools**
 
 ### Week Ten: Procedural - Digital Humanities (Monday, October 21)
