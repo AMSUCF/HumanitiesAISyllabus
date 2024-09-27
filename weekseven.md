@@ -10,13 +10,13 @@ For this exercise, you'll need a few images that are either in the public domain
 ![Initial photo](butterfly.jpg)
 
 #### Output:
-<video src="monarch.mp4" width="500" controls></video>
+<video src="monarch.mp4" controls></video>
 
 Use up your free attempts and try a range of prompts - there's no need to subscribe this time, unless you are interested in exploring this further as part of your own work. Generate 2-3 short videos to share with your peers, using either one tool, or a range. 
 
 ### Critiquing Generated Video
 
-Now that you've explored the tools within some limitations, choose a generated video to analyze and critique, with particular attention to the tensions of perception, vision, and labor drawn out through this week's readings. Keep in mind the concerns raised in Brett Hal
+Now that you've explored the tools within some limitations, choose a generated video to analyze and critique, with particular attention to the tensions of perception, vision, and labor drawn out through this week's readings. Keep in mind the concerns raised in Brett Halperin's talk, ["Hollywood Film Workers Strike Against AI: Understanding Algorithmic Resistance to Generative Cinematography"](https://stars.library.ucf.edu/elo2024/algorithmsandimaginaries/schedule/3/), as well as the current news coverage around greater integration of AI into cinematic productions.
 
 I recommend beginning with explorations by new media artists probing the technology through the form. Here's a few to get you started, but feel free to look further or to pick another piece discussed in *The Perception Machine.*
 
