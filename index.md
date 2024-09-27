@@ -221,7 +221,7 @@ circumstances will require additional time!
 
 ### Week Seven: Visual - Photography and Realism (Monday, September 30)
 
-Tutorial: Video
+[**Tutorial: Video**](weekseven.md)
 
 -   *The Perception Machine* - AUTO-FOTO-KINO; Can You Photograph the Future?
 -   *Artificial Intelligence* - Part V: The Barrier of Meaning
