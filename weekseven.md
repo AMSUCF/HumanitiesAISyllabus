@@ -10,7 +10,7 @@ For this exercise, you'll need a few images that are either in the public domain
 ![Initial photo](butterfly.jpg)
 
 #### Output:
-<video src="monarch.mp4" controls></video>
+<video src="monarch.mp4" width ="739" controls></video>
 
 Use up your free attempts and try a range of prompts - there's no need to subscribe this time, unless you are interested in exploring this further as part of your own work. Generate 2-3 short videos to share with your peers, using either one tool, or a range. 
 
