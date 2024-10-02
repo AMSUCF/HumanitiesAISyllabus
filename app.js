@@ -1,20 +1,26 @@
 let model;
-let canvas;
 let img;
-let dreamFactor = 0.05;  // Adjust this to control the intensity of the "deep dream"
+let canvas;
+let dreamFactor = 0.2;  // Strength of initial dream effect
+let numIterations = 5;  // Number of passes for stronger Inception effect
+let exaggerationFactor = 1.5;  // How much to amplify changes in each iteration
+
+function preload() {
+  // Load your TensorFlow.js model via ml5 (locally hosted)
+  model = ml5.imageClassifier('model.json', modelLoaded);
+}
 
 function setup() {
   canvas = createCanvas(400, 400);
   canvas.parent('app');
-  
-  // Load your TensorFlow.js model via ml5
-  ml5.tf.loadLayersModel('model.json').then(loadedModel => {
-    model = loadedModel;
-    console.log("Model loaded successfully!");
-  });
+  background(255);
 
   // Add event listener for image upload
   document.getElementById('imageUpload').addEventListener('change', handleImageUpload);
+}
+
+function modelLoaded() {
+  console.log('Model loaded successfully!');
 }
 
 function handleImageUpload(event) {
@@ -22,34 +28,48 @@ function handleImageUpload(event) {
   if (file) {
     const reader = new FileReader();
     reader.onload = (e) => {
-      loadImage(e.target.result, (loadedImg) => {
-        img = loadedImg;
-        image(img, 0, 0, width, height);
-        applyDeepDream();
-      });
+      img = loadImage(e.target.result, imageLoaded);
     };
     reader.readAsDataURL(file);
   }
 }
 
-function applyDeepDream() {
-  if (model && img) {
-    const inputTensor = tf.browser.fromPixels(img).expandDims(0).toFloat().div(tf.scalar(255));
-
-    // Slightly adjust the model’s weights for the "dreamy" effect
-    let dreamTensor = model.predict(inputTensor).mul(tf.scalar(dreamFactor)).add(inputTensor);
-
-    // Convert the dreamified tensor back to image
-    tf.browser.toPixels(dreamTensor.squeeze(), canvas.elt).then(() => {
-      // Optional: Perform classification if needed
-      classifyImage(inputTensor);
-    });
-  }
+function imageLoaded() {
+  // Display the uploaded image on the canvas
+  image(img, 0, 0, width, height);
+  applyDeepDream(numIterations);  // Apply the multi-pass inception effect
 }
 
-function classifyImage(imageTensor) {
-  model.predict(imageTensor).array().then(predictions => {
-    const topPrediction = predictions[0].indexOf(Math.max(...predictions[0]));
-    document.getElementById('prediction').innerText = `Top Prediction: ${topPrediction}`;
-  });
+function applyDeepDream(iterations) {
+  if (img && model) {
+    img.loadPixels();
+
+    for (let iter = 0; iter < iterations; iter++) {
+      console.log(`Applying deep dream iteration: ${iter + 1}`);
+      
+      // Run classification at each stage to create exaggerated features
+      model.classify(canvas, (err, results) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+
+        let result = results[0].label;
+        document.getElementById('prediction').innerText = `Iteration ${iter + 1}: ${result}`;
+
+        // Deep dream effect: manipulate pixel colors, amplifying with each iteration
+        for (let i = 0; i < img.pixels.length; i += 4) {
+          img.pixels[i] = img.pixels[i] * (1 + random(-dreamFactor, dreamFactor) * exaggerationFactor);  // Red
+          img.pixels[i + 1] = img.pixels[i + 1] * (1 + random(-dreamFactor, dreamFactor) * exaggerationFactor);  // Green
+          img.pixels[i + 2] = img.pixels[i + 2] * (1 + random(-dreamFactor, dreamFactor) * exaggerationFactor);  // Blue
+        }
+
+        img.updatePixels();  // Apply the modified pixels to the image
+        image(img, 0, 0, width, height);  // Re-draw the image on the canvas
+
+        // Gradually increase exaggeration factor for stronger dream effect
+        exaggerationFactor *= 1.2;  
+      });
+    }
+  }
 }
