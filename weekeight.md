@@ -12,3 +12,6 @@ Next, [launch Teachable Machine](https://teachablemachine.withgoogle.com/train),
 
 
 Upload the images from each category, labeling them as you go (as shown above). Then, train the model and test it by uploading or holding up different content to your web camera. Iterate through content that fits and doesn't fit in the categories.
+
+Finally, explore an existing usage of these libraries from the [Tensorflow.js gallery](https://github.com/tensorflow/tfjs/blob/master/GALLERY.md) - note that since this is a crowdsourced list, quality and usability may vary, so I recommend trying several to find one or two of interest. 
+

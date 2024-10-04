@@ -7,7 +7,7 @@ let exaggerationFactor = 1.5;  // How much to amplify changes in each iteration
 
 function preload() {
   // Load your TensorFlow.js model via ml5 (locally hosted)
-  model = ml5.imageClassifier('model.json', modelLoaded);
+  model = ml5.imageClassifier('model/model.json', modelLoaded);
 }
 
 function setup() {

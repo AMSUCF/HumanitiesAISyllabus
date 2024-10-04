@@ -235,6 +235,8 @@ Tutorial: Multimodal Analysis
 
 -   *The Perception Machine* - "Loser Images"; Conclusion
 -   *Code to Joy* - Telling Computers What to Do
+-   [Farrell, Henry. "After software eats the world, what comes out the other end?" October 3, 2024.](https://www.programmablemutter.com/p/after-software-eats-the-world-what)
+-   [Knight, Will. "Hacking Generative AI for Fun and Profit." Wired. October 2, 2024.](https://www.wired.com/story/sundai-club-generative-ai-hackathon-group/)
 -   **Generative Exercise Eight: Visualizations**
 
 ### Week Nine: Procedural - Code and Rules (Monday, October 14)
