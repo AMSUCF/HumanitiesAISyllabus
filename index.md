@@ -231,7 +231,7 @@ circumstances will require additional time!
 
 ### Week Eight: Visual - Perceptions (Monday, October 7)
 
-**[Tutorial: Image Classification](weekeight.md)
+[**Tutorial: Image Classification**](weekeight.md)
 
 -   *The Perception Machine* - "Loser Images"; Conclusion
 -   *Code to Joy* - Telling Computers What to Do
