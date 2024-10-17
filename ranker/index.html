@@ -51,7 +51,7 @@
         .rating {
             display: flex;
             justify-content: space-between;
-            width: 200px;
+            width: 300px;
             margin: 10px 0;
         }
         .rating label {
@@ -78,7 +78,7 @@
 <body>
 
     <h1>Sci Fi Book Finder</h1>
-    <div id="instructions">Rate the books below from 1 (low) to 5 (high) to help us understand your preferences!</div>
+    <div id="instructions">Rate the books below from 1 (low) to 5 (high) to help us understand your preferences! If you haven't read a book, select "Haven't read it."</div>
     <form id="ratingForm"></form>
 
     <button type="button" class="submit-button" onclick="submitRatings()">Submit Ratings</button>
@@ -107,8 +107,15 @@
             const response = await fetch('sci_fi_books_with_categories.json');
             allBooks = await response.json();
 
-            // Randomly select 10 books
-            selectedBooks = allBooks.sort(() => 0.5 - Math.random()).slice(0, 10);
+            // Initialize the read property for each book if not already set
+            allBooks.forEach(book => {
+                if (typeof book.read === 'undefined') {
+                    book.read = false;
+                }
+            });
+
+            // Randomly select 10 books that have not been read
+            selectedBooks = allBooks.filter(book => !book.read).sort(() => 0.5 - Math.random()).slice(0, 10);
 
             const form = document.getElementById('ratingForm');
 
@@ -137,6 +144,13 @@
                     ratingDiv.appendChild(document.createTextNode(i));
                 }
 
+                const notReadRadio = document.createElement('input');
+                notReadRadio.type = 'radio';
+                notReadRadio.name = `book${index}`;
+                notReadRadio.value = 'not_read';
+                ratingDiv.appendChild(notReadRadio);
+                ratingDiv.appendChild(document.createTextNode("Haven't read it"));
+
                 container.appendChild(ratingDiv);
                 form.appendChild(container);
             });
@@ -148,7 +162,10 @@
             selectedBooks.forEach((book, index) => {
                 const rating = document.querySelector(`input[name="book${index}"]:checked`);
                 if (rating) {
-                    ratings[book.title] = parseInt(rating.value);
+                    if (rating.value !== 'not_read') {
+                        ratings[book.title] = parseInt(rating.value);
+                        book.read = true; // Mark the book as read if rated
+                    }
                 }
             });
 
@@ -199,7 +216,7 @@
             document.getElementById('results').style.display = 'block';
 
             // Check if there are enough books left for another round
-            const availableBooks = allBooks.filter(book => !selectedBooks.includes(book));
+            const availableBooks = allBooks.filter(book => !book.read);
             if (availableBooks.length <= 10) {
                 document.querySelector('.more-button').style.display = 'none';
             }
@@ -209,8 +226,8 @@
 
         // Function to get book recommendations based on theme preferences
         function getRecommendations(themeCounts) {
-            // Filter out selected books from all books
-            const availableBooks = allBooks.filter(book => !selectedBooks.includes(book));
+            // Filter out books that have already been read
+            const availableBooks = allBooks.filter(book => !book.read);
 
             // Score books based on theme overlap
             const bookScores = availableBooks.map(book => {
@@ -235,8 +252,8 @@
             // Show the form again
             document.getElementById('ratingForm').style.display = 'block';
 
-            // Filter out previously selected books
-            const availableBooks = allBooks.filter(book => !selectedBooks.includes(book));
+            // Filter out previously read books
+            const availableBooks = allBooks.filter(book => !book.read);
 
             // Randomly select 10 new books
             selectedBooks = availableBooks.sort(() => 0.5 - Math.random()).slice(0, 10);
@@ -268,6 +285,13 @@
                     ratingDiv.appendChild(radio);
                     ratingDiv.appendChild(document.createTextNode(i));
                 }
+
+                const notReadRadio = document.createElement('input');
+                notReadRadio.type = 'radio';
+                notReadRadio.name = `book${index}`;
+                notReadRadio.value = 'not_read';
+                ratingDiv.appendChild(notReadRadio);
+                ratingDiv.appendChild(document.createTextNode("Haven't read it"));
 
                 container.appendChild(ratingDiv);
                 form.appendChild(container);
