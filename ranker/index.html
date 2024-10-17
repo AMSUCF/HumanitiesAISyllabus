@@ -50,7 +50,7 @@
         .rating label {
             margin-right: 5px;
         }
-        .submit-button {
+        .submit-button, .more-button {
             display: block;
             width: 100%;
             padding: 10px;
@@ -63,7 +63,7 @@
             max-width: 1000px;
             margin: 20px auto;
         }
-        .submit-button:hover {
+        .submit-button:hover, .more-button:hover {
             background-color: #e64a19;
         }
     </style>
@@ -79,11 +79,19 @@
         <h2>Your Preferences and Recommendations</h2>
         <div id="preferences"></div>
         <div id="recommendations"></div>
+        <button type="button" class="more-button" onclick="loadMoreBooks()">Rate More Books</button>
     </div>
 
     <script>
         let selectedBooks = [];
         let allBooks = [];
+        let themeCounts = {
+            subgenre: {},
+            technology_focus: {},
+            social_theme: {},
+            protagonist_type: {},
+            setting: {}
+        };
 
         // Function to load JSON and display books
         async function loadBooks() {
@@ -136,14 +144,6 @@
             });
 
             // Count preferences based on highest-rated books
-            const themeCounts = {
-                subgenre: {},
-                technology_focus: {},
-                social_theme: {},
-                protagonist_type: {},
-                setting: {}
-            };
-
             for (const [title, rating] of Object.entries(ratings)) {
                 if (rating >= 4) { // Consider only high ratings (4 or 5)
                     const book = selectedBooks.find(b => b.title === title);
@@ -203,6 +203,56 @@
 
             // Sort books by score in descending order and select top 3
             return bookScores.sort((a, b) => b.score - a.score).slice(0, 3).map(entry => entry.book);
+        }
+
+        // Function to load more books for additional ranking
+        function loadMoreBooks() {
+            // Hide the results section
+            document.getElementById('results').style.display = 'none';
+
+            // Show the form again
+            document.getElementById('ratingForm').style.display = 'block';
+
+            // Filter out previously selected books
+            const availableBooks = allBooks.filter(book => !selectedBooks.includes(book));
+
+            // Randomly select 10 new books
+            selectedBooks = availableBooks.sort(() => 0.5 - Math.random()).slice(0, 10);
+
+            const form = document.getElementById('ratingForm');
+            form.innerHTML = '';
+
+            // Create the new rating form dynamically
+            selectedBooks.forEach((book, index) => {
+                const container = document.createElement('div');
+                container.className = 'book-container';
+
+                const title = document.createElement('h2');
+                title.innerText = `${book.title} by ${book.author} (${book.year})`;
+                container.appendChild(title);
+
+                const ratingDiv = document.createElement('div');
+                ratingDiv.className = 'rating';
+                
+                const label = document.createElement('label');
+                label.innerText = 'Rate: ';
+                ratingDiv.appendChild(label);
+
+                for (let i = 1; i <= 5; i++) {
+                    const radio = document.createElement('input');
+                    radio.type = 'radio';
+                    radio.name = `book${index}`;
+                    radio.value = i;
+                    ratingDiv.appendChild(radio);
+                    ratingDiv.appendChild(document.createTextNode(i));
+                }
+
+                container.appendChild(ratingDiv);
+                form.appendChild(container);
+            });
+
+            // Show the submit button again
+            document.querySelector('.submit-button').style.display = 'block';
         }
 
         // Load books when the page is ready
