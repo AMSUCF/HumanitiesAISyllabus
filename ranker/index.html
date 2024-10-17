@@ -18,6 +18,13 @@
             font-size: 3em;
             margin-bottom: 40px;
         }
+        #instructions {
+            max-width: 1000px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 1.2em;
+            color: #ffcc00;
+        }
         #results {
             max-width: 1000px;
             margin: 20px auto;
@@ -71,6 +78,7 @@
 <body>
 
     <h1>Sci Fi Book Finder</h1>
+    <div id="instructions">Rate the books below from 1 (low) to 5 (high) to help us understand your preferences!</div>
     <form id="ratingForm"></form>
 
     <button type="button" class="submit-button" onclick="submitRatings()">Submit Ratings</button>
@@ -92,6 +100,7 @@
             protagonist_type: {},
             setting: {}
         };
+        let round = 1;
 
         // Function to load JSON and display books
         async function loadBooks() {
@@ -161,6 +170,11 @@
             document.getElementById('ratingForm').style.display = 'none';
             document.querySelector('.submit-button').style.display = 'none';
 
+            // Update instructions for the next round
+            if (round === 1) {
+                document.getElementById('instructions').innerText = 'Rank more books to improve our suggestions!';
+            }
+
             // Display the reader's preferences
             let preferenceSummary = '<h3>Your Theme Preferences:</h3><ul>';
             for (const [theme, counts] of Object.entries(themeCounts)) {
@@ -183,6 +197,14 @@
 
             // Show the results section
             document.getElementById('results').style.display = 'block';
+
+            // Check if there are enough books left for another round
+            const availableBooks = allBooks.filter(book => !selectedBooks.includes(book));
+            if (availableBooks.length <= 10) {
+                document.querySelector('.more-button').style.display = 'none';
+            }
+
+            round++;
         }
 
         // Function to get book recommendations based on theme preferences
