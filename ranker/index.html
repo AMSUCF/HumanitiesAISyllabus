@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Fiction Book Ratings</title>
+    <title>Sci Fi Book Finder</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1b1b2f;
+            color: #e0e0e0;
             margin: 0;
             padding: 20px;
         }
         h1 {
             text-align: center;
+            color: #ffcc00;
+            font-size: 3em;
+            margin-bottom: 40px;
+        }
+        #results {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2e2e4f;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none;
         }
         .book-container {
-            background-color: #fff;
+            background-color: #2e2e4f;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .book-container h2 {
             margin: 0 0 10px;
+            color: #ffcc00;
         }
         .rating {
             display: flex;
@@ -37,24 +54,32 @@
             display: block;
             width: 100%;
             padding: 10px;
-            background-color: #007BFF;
+            background-color: #ff5722;
             color: white;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            max-width: 1000px;
+            margin: 20px auto;
         }
         .submit-button:hover {
-            background-color: #0056b3;
+            background-color: #e64a19;
         }
     </style>
 </head>
 <body>
 
-    <h1>Rate Science Fiction Books</h1>
+    <h1>Sci Fi Book Finder</h1>
     <form id="ratingForm"></form>
 
     <button type="button" class="submit-button" onclick="submitRatings()">Submit Ratings</button>
+
+    <div id="results">
+        <h2>Your Preferences and Recommendations</h2>
+        <div id="preferences"></div>
+        <div id="recommendations"></div>
+    </div>
 
     <script>
         let selectedBooks = [];
@@ -132,25 +157,32 @@
                 }
             }
 
+            // Hide the form and button
+            document.getElementById('ratingForm').style.display = 'none';
+            document.querySelector('.submit-button').style.display = 'none';
+
             // Display the reader's preferences
-            let preferenceSummary = 'Your theme preferences based on your ratings:\n';
+            let preferenceSummary = '<h3>Your Theme Preferences:</h3><ul>';
             for (const [theme, counts] of Object.entries(themeCounts)) {
                 const mostPreferred = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
                 if (mostPreferred) {
-                    preferenceSummary += `- ${theme}: ${mostPreferred[0]}\n`;
+                    preferenceSummary += `<li><strong>${theme}:</strong> ${mostPreferred[0]}</li>`;
                 }
             }
-
-            alert(preferenceSummary);
+            preferenceSummary += '</ul>';
+            document.getElementById('preferences').innerHTML = preferenceSummary;
 
             // Recommend 3 books based on preferences
             const recommendations = getRecommendations(themeCounts);
-            let recommendationSummary = 'We recommend these books based on your preferences:\n';
+            let recommendationSummary = '<h3>Recommended Books for You:</h3><ul>';
             recommendations.forEach(book => {
-                recommendationSummary += `- ${book.title} by ${book.author} (${book.year})\n`;
+                recommendationSummary += `<li>${book.title} by ${book.author} (${book.year})</li>`;
             });
+            recommendationSummary += '</ul>';
+            document.getElementById('recommendations').innerHTML = recommendationSummary;
 
-            alert(recommendationSummary);
+            // Show the results section
+            document.getElementById('results').style.display = 'block';
         }
 
         // Function to get book recommendations based on theme preferences
