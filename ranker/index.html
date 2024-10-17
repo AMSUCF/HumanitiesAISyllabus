@@ -58,14 +58,15 @@
 
     <script>
         let selectedBooks = [];
+        let allBooks = [];
 
         // Function to load JSON and display books
         async function loadBooks() {
             const response = await fetch('sci_fi_books_with_categories.json');
-            const books = await response.json();
+            allBooks = await response.json();
 
             // Randomly select 10 books
-            selectedBooks = books.sort(() => 0.5 - Math.random()).slice(0, 10);
+            selectedBooks = allBooks.sort(() => 0.5 - Math.random()).slice(0, 10);
 
             const form = document.getElementById('ratingForm');
 
@@ -141,6 +142,35 @@
             }
 
             alert(preferenceSummary);
+
+            // Recommend 3 books based on preferences
+            const recommendations = getRecommendations(themeCounts);
+            let recommendationSummary = 'We recommend these books based on your preferences:\n';
+            recommendations.forEach(book => {
+                recommendationSummary += `- ${book.title} by ${book.author} (${book.year})\n`;
+            });
+
+            alert(recommendationSummary);
+        }
+
+        // Function to get book recommendations based on theme preferences
+        function getRecommendations(themeCounts) {
+            // Filter out selected books from all books
+            const availableBooks = allBooks.filter(book => !selectedBooks.includes(book));
+
+            // Score books based on theme overlap
+            const bookScores = availableBooks.map(book => {
+                let score = 0;
+                ['subgenre', 'technology_focus', 'social_theme', 'protagonist_type', 'setting'].forEach(theme => {
+                    if (themeCounts[theme][book[theme]]) {
+                        score += themeCounts[theme][book[theme]];
+                    }
+                });
+                return { book, score };
+            });
+
+            // Sort books by score in descending order and select top 3
+            return bookScores.sort((a, b) => b.score - a.score).slice(0, 3).map(entry => entry.book);
         }
 
         // Load books when the page is ready
