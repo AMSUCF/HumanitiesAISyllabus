@@ -169,9 +169,9 @@
                 }
             });
 
-            // Count preferences based on highest-rated books
+            // Count preferences based on books rated 3 or higher
             for (const [title, rating] of Object.entries(ratings)) {
-                if (rating >= 4) { // Consider only high ratings (4 or 5)
+                if (rating >= 3) { // Consider books rated 3, 4, or 5
                     const book = selectedBooks.find(b => b.title === title);
                     ['subgenre', 'technology_focus', 'social_theme', 'protagonist_type', 'setting'].forEach(theme => {
                         if (themeCounts[theme][book[theme]]) {
