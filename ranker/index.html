@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Fiction Book Ratings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .book-container {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .book-container h2 {
+            margin: 0 0 10px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            margin: 10px 0;
+        }
+        .rating label {
+            margin-right: 5px;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rate Science Fiction Books</h1>
+    <form id="ratingForm"></form>
+
+    <button type="button" class="submit-button" onclick="submitRatings()">Submit Ratings</button>
+
+    <script>
+        let selectedBooks = [];
+
+        // Function to load JSON and display books
+        async function loadBooks() {
+            const response = await fetch('sci_fi_books_with_categories.json');
+            const books = await response.json();
+
+            // Randomly select 10 books
+            selectedBooks = books.sort(() => 0.5 - Math.random()).slice(0, 10);
+
+            const form = document.getElementById('ratingForm');
+
+            // Create the rating form dynamically
+            selectedBooks.forEach((book, index) => {
+                const container = document.createElement('div');
+                container.className = 'book-container';
+
+                const title = document.createElement('h2');
+                title.innerText = `${book.title} by ${book.author} (${book.year})`;
+                container.appendChild(title);
+
+                const ratingDiv = document.createElement('div');
+                ratingDiv.className = 'rating';
+                
+                const label = document.createElement('label');
+                label.innerText = 'Rate: ';
+                ratingDiv.appendChild(label);
+
+                for (let i = 1; i <= 5; i++) {
+                    const radio = document.createElement('input');
+                    radio.type = 'radio';
+                    radio.name = `book${index}`;
+                    radio.value = i;
+                    ratingDiv.appendChild(radio);
+                    ratingDiv.appendChild(document.createTextNode(i));
+                }
+
+                container.appendChild(ratingDiv);
+                form.appendChild(container);
+            });
+        }
+
+        // Function to handle form submission and analyze theme preferences
+        function submitRatings() {
+            const ratings = {};
+            selectedBooks.forEach((book, index) => {
+                const rating = document.querySelector(`input[name="book${index}"]:checked`);
+                if (rating) {
+                    ratings[book.title] = parseInt(rating.value);
+                }
+            });
+
+            // Count preferences based on highest-rated books
+            const themeCounts = {
+                subgenre: {},
+                technology_focus: {},
+                social_theme: {},
+                protagonist_type: {},
+                setting: {}
+            };
+
+            for (const [title, rating] of Object.entries(ratings)) {
+                if (rating >= 4) { // Consider only high ratings (4 or 5)
+                    const book = selectedBooks.find(b => b.title === title);
+                    ['subgenre', 'technology_focus', 'social_theme', 'protagonist_type', 'setting'].forEach(theme => {
+                        if (themeCounts[theme][book[theme]]) {
+                            themeCounts[theme][book[theme]]++;
+                        } else {
+                            themeCounts[theme][book[theme]] = 1;
+                        }
+                    });
+                }
+            }
+
+            // Display the reader's preferences
+            let preferenceSummary = 'Your theme preferences based on your ratings:\n';
+            for (const [theme, counts] of Object.entries(themeCounts)) {
+                const mostPreferred = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+                if (mostPreferred) {
+                    preferenceSummary += `- ${theme}: ${mostPreferred[0]}\n`;
+                }
+            }
+
+            alert(preferenceSummary);
+        }
+
+        // Load books when the page is ready
+        document.addEventListener('DOMContentLoaded', loadBooks);
+    </script>
+
+</body>
+</html>
