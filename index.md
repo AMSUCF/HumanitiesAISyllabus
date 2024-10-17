@@ -241,20 +241,20 @@ circumstances will require additional time!
 
 ### Week Nine: Procedural - Code and Rules (Monday, October 14)
 
-Tutorial: Visual Studio Code
+Tutorial: Cancelled due to Hurricane
 
 -   *Code to Joy* - The What of Programming
 -   *Algorithms of Oppression* - The Power of Algorithms
 -   Evans, Julia. [*So you want to be a wizard.*](https://wizardzines.com/zines/wizard/) 
--   **Generative Exercise Nine: Tools**
+-   **Exercise cancelled due to hurricane: Install Visual Studio Code + Github Desktop**
 
 ### Week Ten: Procedural - Digital Humanities (Monday, October 21)
 
-Tutorial: GitHub CoPilot
+[**Tutorial: Talking to Your Computer**](weekten.md)
 
 -   *Code to Joy* - Sequencing Commands
 -   *Algorithms of Oppression* - A Society; Searching
--   **Generative Exercise Ten: Structured Data**
+-   **Generative Exercise Ten: Recommendations from Data**
 
 ### Week Eleven: Procedural - Art and Play (Monday, October 28)
 
