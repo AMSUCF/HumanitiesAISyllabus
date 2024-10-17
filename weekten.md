@@ -100,10 +100,7 @@ I recommend selecting the **ChatGPT 4.0 with Canvas** model for this task, as th
         been rated yet and only select books from the top-rated
         genres.\"
 
-    -   *Suggested Modifications*: Test the debugging process by having
-        multiple users rate the books and see if the preferences align
-        correctly. You could also log the ratings and genre counts to
-        better visualize how preferences are being tracked.
+    -   *Suggested Modifications*: This step is for after you've uploaded and started to test your system - if you aren't getting the results you are looking for, try breaking down the problem and iterating until it works. I recommend testing the code at every step of this process.
 
 10. **Creating a GitHub Repository and Setting Up the Project**
 
@@ -119,15 +116,13 @@ I recommend selecting the **ChatGPT 4.0 with Canvas** model for this task, as th
             in GitHub Desktop. This will allow you to start editing
             files in VS Code.
 
-        3.  **Save the JSON File to the Repository Folder**: In VS Code,
-            create a new file called sci_fi_books.json in the repository
-            folder. Copy the JSON data you generated earlier and paste
-            it into this file. Save the file.
+        3.  **Save the JSON File to the Repository Folder**: Copy the JSON data file you generated earlier and paste
+            it into the repository folder. Check the file in VS Code to confirm.
 
         4.  **Create an HTML File**: In the same repository folder,
             create a new file called index.html. This file will be used
             to hold the output for displaying book recommendations and
-            handling user ratings.
+            handling user ratings. Copy and paste your final recommendation system code. You might need to replace it multiple times to get everything to work, using the debugging process discussed above.
 
         5.  **Commit and Push Changes**: Go back to GitHub Desktop, and
             you should see the new files you created. Write a commit
