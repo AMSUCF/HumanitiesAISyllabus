@@ -262,6 +262,8 @@ Tutorial: Iteration and Design
 
 -   *Code to Joy* - Splitting on Conditionals
 -   *Algorithms of Oppression* - Searching for Black Girls
+-   [Firth, Niall. "How generative AI could reinvent what it means to play." MIT Technology Review, June 20, 2024.](https://www.technologyreview.com/2024/06/20/1093428/generative-ai-reinventing-video-games-immersive-npcs/)
+-   [Looper, Christian de. "Meet the developers integrating generative AI in a new video game." Mashable, October 21, 2024.](https://mashable.com/article/generative-ai-in-video-games-retail-mage)
 -   **Generative Exercise Eleven: Games**
 
 ### Week Twelve: Procedural - Hypertext (Monday, November 4)
