@@ -1,5 +1,4 @@
-# Simple Interactive Room Game Instructions
-
+# Tutorial: 
 ## 1. Set Up the Canvas
 1. Create a `setup()` function in p5.js.
 2. Generate a 600x600 canvas for your game.

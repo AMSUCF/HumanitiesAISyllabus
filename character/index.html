@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Canvas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let robotImg;
+        let currentText = "";
+
+        function preload() {
+            robotImg = loadImage('robot.png');
+        }
+
+        function setup() {
+            createCanvas(1000, 1000).parent(document.body);
+            textAlign(CENTER, CENTER);
+        }
+
+        function draw() {
+            background(220);
+            image(robotImg, 0, 0);
+
+            // Display mouse coordinates
+            displayCoordinates();
+
+            // Define mouseover zones and set description text
+            if (isMouseOverRobot()) {
+                highlightZone(300, 300, 200, 400); // Robot area
+                currentText = "Here's the robot, dreaming of intergalactic adventures and wondering why it can't have laser eyes... yet. One day, it hopes to boldly go where no bot has gone before, just like in Star Trek, with a little help from Scotty's engineering notes.";
+            } else if (isMouseOverDesk()) {
+                highlightZone(100, 600, 300, 200); // Desk area
+                currentText = "The desk is cluttered with bolts, circuit diagrams, and half-eaten energy bars. Classic robot kid workspace. If this were a Hitchhiker's Guide scene, there'd be a towel here somewhere—essential for all space adventures!";
+            } else if (isMouseOverComputer()) {
+                highlightZone(150, 650, 100, 100); // Computer area
+                currentText = "This computer is connected to the vast robotnet, where all sci-fi classics are streamed directly into memory banks. It even has Marvin's entire collection of depressing quotes from Hitchhiker's Guide. How uplifting!";
+            } else if (isMouseOverBed()) {
+                highlightZone(700, 500, 250, 400); // Bed area
+                currentText = "Even robots need rest... or at least a place to pretend to recharge while watching sci-fi movies under the blanket. Think of it like Spock meditating, but with more cozy sci-fi references and zero Vulcan logic.";
+            } else if (isMouseOverPoster()) {
+                highlightZone(50, 50, 200, 300); // Poster area
+                currentText = "A poster of the latest space hero bot, complete with dramatic pose and a tagline: 'To the stars and beyond the warranty!' Rumor has it this bot once saved an entire spaceship by using a Babel fish and quoting Star Trek's Prime Directive.";
+            } else if (isMouseOverWindow()) {
+                highlightZone(800, 50, 150, 200); // Window area
+                currentText = "The window looks out onto the scrapyard, where dreams of interstellar travel start with a pile of spare parts. Just like the Enterprise, all it takes is a little elbow grease—or robotic oil—and a lot of imagination to go 'where no bot has gone before.'";
+            } else {
+                currentText = "";
+            }
+
+            // Display current description text
+            fill(255);
+            stroke(0, 0, 139);
+            strokeWeight(4);
+            rect(width / 2 - 250, height / 2 - 50, 500, 100);
+            fill(255);
+            noStroke();
+            textSize(18);
+            text(currentText, width / 2, height / 2);
+        }
+
+        function highlightZone(x, y, w, h) {
+            noFill();
+            stroke(255, 0, 0);
+            strokeWeight(3);
+            rect(x, y, w, h);
+        }
+
+        function displayCoordinates() {
+            fill(0);
+            noStroke();
+            textSize(16);
+            text(`X: ${mouseX}, Y: ${mouseY}`, 10, height - 10);
+        }
+
+        function isMouseOverRobot() {
+            return mouseX > 300 && mouseX < 500 && mouseY > 300 && mouseY < 700;
+        }
+
+        function isMouseOverDesk() {
+            return mouseX > 100 && mouseX < 400 && mouseY > 600 && mouseY < 800;
+        }
+
+        function isMouseOverComputer() {
+            return mouseX > 150 && mouseX < 250 && mouseY > 650 && mouseY < 750;
+        }
+
+        function isMouseOverBed() {
+            return mouseX > 700 && mouseX < 950 && mouseY > 500 && mouseY < 900;
+        }
+
+        function isMouseOverPoster() {
+            return mouseX > 50 && mouseX < 250 && mouseY > 50 && mouseY < 350;
+        }
+
+        function isMouseOverWindow() {
+            return mouseX > 800 && mouseX < 950 && mouseY > 50 && mouseY < 250;
+        }
+    </script>
+</body>
+</html>
