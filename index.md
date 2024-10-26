@@ -258,7 +258,7 @@ Tutorial: Cancelled due to Hurricane
 
 ### Week Eleven: Procedural - Art and Play (Monday, October 28)
 
-Tutorial: Iteration and Design
+[Tutorial: Iteration and Design](weekeleven.md)
 
 -   *Code to Joy* - Splitting on Conditionals
 -   *Algorithms of Oppression* - Searching for Black Girls
