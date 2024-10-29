@@ -268,12 +268,12 @@ Tutorial: Cancelled due to Hurricane
 
 ### Week Twelve: Procedural - Hypertext (Monday, November 4)
 
-Tutorial: Working Across Interfaces
+[**Tutorial: Working Across Interfaces**](weektwelve.md)
 
 -   *Code to Joy* - Storing in Variables
 -   *Algorithms of Oppression* - Searching for People and Communities
 -   [Martin, Meredith. "Command Lines for the Humanities." *PMLA/Publications of the Modern Language Association of America.* 2024;139(3):541-547. doi:10.1632/S0030812924000555](https://www.cambridge.org/core/journals/pmla/article/command-lines-for-the-humanities/097F959E6971063D05B085E698354BA2)
--   **Generative Exercise Twelve: Interactive Object**
+-   **Generative Exercise Twelve: Distant Reading the Web**
 
 ### Week Thirteen: Textual-Visual-Procedural (Monday, November 11)
 
