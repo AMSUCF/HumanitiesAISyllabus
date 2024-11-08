@@ -277,7 +277,7 @@ Tutorial: Cancelled due to Hurricane
 
 ### Week Thirteen: Textual-Visual-Procedural (Monday, November 11)
 
-Tutorial: Multimodal Development
+[Tutorial: Multimodal Development](weekthree.md)
 
 -   *Code to Joy* - Consolidating Into Loops
 -   *Algorithms of Oppression* - Searching for Protections
@@ -297,10 +297,9 @@ Tutorial: Iteration and Design
 
 -   *Code to Joy* - Combining Code and Data; Programmable World
 -   *Algorithms of Oppression* - Future of Information Culture; Conclusion
--   **Generative Exercise Fifteen: Public Humanities Prototype**
+-   **Extra Credit Exercise: Public Humanities Prototype**
 
 ### Final Reflection (Due December 7)
 
 -   Submit & complete your Final Reflection, as
     well as any approved late work, by December 7th!
--   **Extra Credit Making Exercise: New Tools for Generation**
