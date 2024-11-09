@@ -277,7 +277,7 @@ Tutorial: Cancelled due to Hurricane
 
 ### Week Thirteen: Textual-Visual-Procedural (Monday, November 11)
 
-[Tutorial: Multimodal Development](weekthree.md)
+[**Tutorial: Multimodal Development**](weekthirteen.md)
 
 -   *Code to Joy* - Consolidating Into Loops
 -   *Algorithms of Oppression* - Searching for Protections
