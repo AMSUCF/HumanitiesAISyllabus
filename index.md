@@ -286,15 +286,17 @@ Tutorial: Cancelled due to Hurricane
 
 ### Week Fourteen: Applications: Art (Monday, November 18)
 
-Tutorial: Debugging
+[**Tutorial: Back to Bots**](weekfourteen.md)
 
 -   *Code to Joy* - Defining Functions
 -   *Algorithms of Oppression* - Future of Knowledge in Public
--   **Generative Exercise Fourteen: Experimental Interactive Art**
+-   [Fishman, Ted C. "The AI Boom Rests on Billions of Tonnes of Concrete." *IEEE Spectrum.* October 30, 2024.](https://spectrum.ieee.org/green-concrete)
+-   ["AI Robots" (interactive piece) *IEEE Spectrum.*](https://spectrum.ieee.org/ai-robots)
+-   **Generative Exercise Fourteen: Experimental Interactive Bot**
 
 ### Week Fifteen: Applications: Humanities (Monday, November 25)
 
-Tutorial: Iteration and Design
+**Tutorial: Envisioning Complex Projects**
 
 -   *Code to Joy* - Combining Code and Data; Programmable World
 -   *Algorithms of Oppression* - Future of Information Culture; Conclusion
