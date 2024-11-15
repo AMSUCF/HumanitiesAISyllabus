@@ -304,5 +304,5 @@ Tutorial: Cancelled due to Hurricane
 
 ### Final Reflection (Due December 7)
 
--   Submit & complete your Final Reflection, as
+-   Submit & complete your [**Final Reflection**](finalreflection.md), as
     well as any approved late work, by December 7th!

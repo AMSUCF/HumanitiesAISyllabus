@@ -1,0 +1,9 @@
+## Final Reflection
+
+Throughout this semester, we've explored the impact of generative AI through textual, visual, and procedural output, iterating through towards multimodal generation. Several of the usages we've encountered are still in early stages, and there's both significant speculation and hype around the futures these tools portend. This final reflection is an opportunity to think about that future work: in a short (2-3 pages, if textual) essay, contextualize the work you've produced and critiqued the semester. Your reflection should be guided by the following questions, which ask you to connect your past, present, and future work with generative AI:
+
+- **What past perceptions did this course challenge - or confirm?** Does generative AI work the way you expected? Have your expectations of these tools (or of how you see yourself working with them) changed from where you started?
+- **What present work are you most excited about?** Did you start anything you want to continue? Did any particular exercise resonate with your goals, or raise questions or concerns that you want to address further?
+- **What will you take with you to your future work?** How will you speak to colleagues and/or students about generative AI going forward?
+
+These questions are deliberately broad, and not all of them will apply to you. Feel free to select and adapt, and of course, your response can be as multimodal as your own energy and schedule at the end of the semester permits. Text alone is fine, but experimentation with form (including using generative AI to illustrate, provoke, or procedurally augment your response) is welcome: indicate what tools you've used and how in your response. Depending on your approach, you can either upload a traditional document or file, or link to a web version of your reflection.
