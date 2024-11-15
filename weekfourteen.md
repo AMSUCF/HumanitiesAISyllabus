@@ -19,6 +19,10 @@ Here's the steps that ChatGPT o1 suggested to me, with some notes on how you mig
 - **Fine-Tune the Model** - Expect the most errors and frustration at this stage - remember, fine-tuning is basically running a loop across all the data you've gathered over and over again and putting it into context with the model you've selected. If you find it takes too long or crashes the RAM on Colab, ask to simplify the training (fewer epochs, etc.)
 - **Test the Chatbot in Google Colab** - For this exercise, we're not going to deploy our model externally: that would require hosting it, like OpenAI does with ChatGPT. Instead, you can run the Chatbot through test prompts directly in Python on Colab. Screenshot results, and see how your interaction proceeds - expect to hit lots of limitations given the constraints of this minimal training, but hopefully you'll also get some emergent, playful results!
 
+![Austen bot output](austenbot.png)
+
+When complete, your sample output will look something like this one from my AustenBot - you can try it for itself [using the Colab notebook](https://colab.research.google.com/drive/1QmCgdlzBdwmHtm964zUiS3UiotVyxK7l?usp=sharing). This bot is still fairly limited (we gave it a small dataset using GPT2, an older model) - however, it offers some insights into how you might build on a creative dataset towards an interactive experience. You can also use this notebook to help you build and debug your own bot.
+
 ### Reflecting on Chat
 
 Compare this experience to the bot interactions we had at the start of the semester: how has your understanding of, and expectation of, these bots changes? Where do the limitations of the dataset and the model come out, and how can you understand that through the lens of the readings and experiments we've done across the semester?
