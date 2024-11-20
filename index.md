@@ -296,7 +296,7 @@ Tutorial: Cancelled due to Hurricane
 
 ### Week Fifteen: Applications: Humanities (Monday, November 25)
 
-**Tutorial: Envisioning Complex Projects**
+[**Tutorial: Envisioning Complex Projects**](weekfifteen.md)
 
 -   *Code to Joy* - Combining Code and Data; Programmable World
 -   *Algorithms of Oppression* - Future of Information Culture; Conclusion
